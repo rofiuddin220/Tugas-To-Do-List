@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Daftar Tugas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Daftar Tugas</h1>
+
+    <div class="form-container">
+        <form id="task-form">
+            <label for="task-name">Nama Tugas:</label>
+            <input type="text" id="task-name" required>
+
+            <label for="task-date">Tanggal:</label>
+            <input type="date" id="task-date" required>
+
+            <button type="submit" id="add-task-btn">Tambah Tugas</button>
+        </form>
+    </div>
+
+    <div class="controls-container">
+        <label for="filter-date">Filter Tanggal:</label>
+        <input type="date" id="filter-date">
+        <button id="filter-btn">Filter</button>
+        <button id="clear-all-btn">Hapus Semua Tugas</button>
+    </div>
+
+    <div class="tasks-container">
+        <h2>Daftar Tugas Anda</h2>
+        <table id="task-table">
+            <thead>
+                <tr>
+                    <th>Nama Tugas</th>
+                    <th>Tanggal</th>
+                    <th>Aksi</th>
+                </tr>
+            </thead>
+            <tbody id="task-list">
+                </tbody>
+        </table>
+        <p id="validation-message" style="color: red;"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
